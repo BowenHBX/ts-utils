@@ -11,7 +11,7 @@ const taskQueue = {
   },
   /**
    * 开始执行
-   * @param type first: 第一次取3个，其后每次只放一个入栈
+   * @param type first: 第一次取this.count个，其后每次只放一个入栈
    */
   start: function (type = 'first') {
     for(let i = 0; i < (type === 'first' ? this.count : 1); i++) {
